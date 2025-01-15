@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Data Analyst & Web Scraping</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    .navbar {
+      background-color: #343a40;
+    }
+    .navbar-brand, .nav-link {
+      color: #fff !important;
+    }
+    .hero-section {
+      background: linear-gradient(135deg, #007BFF, #6610F2);
+      color: white;
+      padding: 120px 20px;
+      text-align: center;
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    }
+    .hero-section h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+    }
+    .hero-section p {
+      font-size: 1.25rem;
+      margin-bottom: 30px;
+    }
+    .hero-section .btn {
+      padding: 12px 30px;
+      font-size: 1.1rem;
+    }
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .project-card {
+      border: none;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+    .skills-section {
+      background: #343a40;
+      color: white;
+      padding: 60px 20px;
+    }
+    .skills-section .icon {
+      font-size: 2.5rem;
+      color: #007BFF;
+      margin-bottom: 15px;
+    }
+    footer {
+      background: #222;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    footer a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">MyPortfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <h1>Hi, I'm Mochammad Rizky</h1>
+      <p>Data Analyst & Web Scraping Expert</p>
+      <a href="#contact" class="btn btn-light btn-lg text-dark">Contact Me</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container my-5">
+    <h2 class="section-title">About Me</h2>
+    <p class="text-center">
+      Saya adalah seorang <strong>Data Analyst</strong> dan <strong>Web Scraping Expert</strong> yang memiliki semangat untuk mengubah data mentah menjadi wawasan yang bermakna. Dengan pengalaman lebih dari <em>1 tahun</em>, saya telah membantu berbagai bisnis membuat keputusan yang lebih baik melalui strategi berbasis data. Keahlian saya meliputi pengembangan alat web scraping yang efisien, pembuatan dashboard interaktif, dan automasi proses data untuk meningkatkan efisiensi. Mari bekerja sama untuk mengubah data Anda menjadi peluang!
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="container my-5">
+    <h2 class="section-title">Projects</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card project-card">
+          <img src="project1.jpg" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Web Scraper for E-commerce</h5>
+            <p class="card-text">Mengembangkan web scraper untuk mengumpulkan data produk, membantu bisnis membuat strategi harga yang lebih cepat.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card project-card">
+          <img src="project2.jpg" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Interactive Sales Dashboard</h5>
+            <p class="card-text">Membangun dashboard menggunakan Tableau untuk memvisualisasikan tren penjualan dan meningkatkan proses pengambilan keputusan.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <div class="container text-center">
+      <h2 class="section-title text-light">Skills</h2>
+      <div class="row mt-4">
+        <div class="col-md-3">
+          <div class="icon">🐍</div>
+          <h5>Python</h5>
+        </div>
+        <div class="col-md-3">
+          <div class="icon">🌐</div>
+          <h5>Web Scraping</h5>
+        </div>
+        <div class="col-md-3">
+          <div class="icon">📊</div>
+          <h5>Data Analysis</h5>
+        </div>
+        <div class="col-md-3">
+          <div class="icon">📈</div>
+          <h5>Data Visualization</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container my-5">
+    <h2 class="section-title">Contact Me</h2>
+    <form class="mt-4">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-dark">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Mochammad Rizky. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+```
